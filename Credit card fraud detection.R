@@ -22,8 +22,7 @@ library(readxl)
 > install.packages("caret")
 
 > library(caret)
-Error: package or namespace load failed for ‘caret’ in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]):
-  there is no package called ‘stringr’
+
 > install.packages("stringr")
 
 > library(caret)
@@ -384,10 +383,7 @@ Warning messages:
   invalid graphics state
 3: In doTryCatch(return(expr), name, parentenv, handler) :
   invalid graphics state
-> install.packages(pROC)
-Error in install.packages : object 'pROC' not found
-> install.packages("pROC")
-Error in install.packages : Updating loaded packages
+
 > install.packages("pROC")
 trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/pROC_1.16.2.tgz'
 Content type 'application/x-gzip' length 1099935 bytes (1.0 MB)
@@ -481,8 +477,6 @@ The downloaded binary packages are in
 > require(rpart)
 Loading required package: rpart
 > library(rpart)
-> library(rpart.plot)
-Error in library(rpart.plot) : there is no package called ‘rpart.plot’
 > install.packages("rpart.plot")
 trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.0/rpart.plot_3.0.8.tgz'
 Content type 'application/x-gzip' length 1056031 bytes (1.0 MB)
@@ -493,16 +487,6 @@ Content type 'application/x-gzip' length 1056031 bytes (1.0 MB)
 The downloaded binary packages are in
 /var/folders/dx/tsshwh316fz4s85t1_4xydnr0000gn/T//RtmplQWzR8/downloaded_packages
 > library(rpart.plot)
-> decisiontreemodel = rpart(Class~.,creditcard, method = 'class')
-
-There were 18 warnings (use warnings() to see them)
-> 
-  > predictedvalues = predict(decisiontreemodel,creditcard, type='class')
-Error in predict(decisiontreemodel, creditcard, type = "class") : 
-  object 'decisiontreemodel' not found
-> decisiontreemodel = rpart(Class~., creditcard, method="Class")
-Error in rpart(Class ~ ., creditcard, method = "Class") : Invalid method
-In addition: There were 24 warnings (use warnings() to see them)
 > decisiontreemodel = rpart(Class~., creditcard, method="class")
 > 
   > 
@@ -535,7 +519,5 @@ node), split, n, loss, yval, (yprob)
 60) V27>=1.077147 34   4 0 (0.8823529412 0.1176470588) *
   61) V27< 1.077147 64   5 1 (0.0781250000 0.9218750000) *
   31) V26>=-0.2644702 267  13 1 (0.0486891386 0.9513108614) *
-  > 
-  
-  > 
+ 
   
